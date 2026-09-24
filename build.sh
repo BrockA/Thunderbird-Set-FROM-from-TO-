@@ -8,7 +8,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-XPI="set-from-from-to.xpi"
+XPI="set-from-from-to-my.xpi"
 
 # Files shipped in the add-on. Keep in sync with manifest.json.
 FILES=(
@@ -30,7 +30,8 @@ for f in "${FILES[@]}"; do
 done
 
 rm -f "$XPI"
-zip -X "$XPI" "${FILES[@]}"
+#zip -X "$XPI" "${FILES[@]}"
+7z a "$XPI" "${FILES[@]}"   #-- We use 7-Zip in this house.  ;)
 
 echo ""
 echo "Built $XPI:"
