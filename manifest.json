@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Set FROM: from TO:",
+  "name": "Set FROM: from TO: (my tmp)",
   "description": "Automatically sets the From address to the address the original email was sent to, for catch-all mailboxes.",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "author": "Skeffling",
   "browser_specific_settings": {
     "gecko": {
